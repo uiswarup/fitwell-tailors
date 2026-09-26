@@ -32,21 +32,27 @@ function resizeCanvas() {
   const w = window.innerWidth;
   const h = window.innerHeight;
 
-  if (canvas.width !== Math.round(w * dpr) || canvas.height !== Math.round(h * dpr)) {
-    canvas.width = Math.round(w * dpr);
-    canvas.height = Math.round(h * dpr);
+  const targetW = Math.round(w * dpr);
+  const targetH = Math.round(h * dpr);
+
+  if (canvas.width !== targetW || canvas.height !== targetH) {
+    canvas.width = targetW;
+    canvas.height = targetH;
     lastDrawnIndex = -1; // force redraw
+    lastDrawnImg = null;
   }
 }
 
 // Draw the image with object-fit: cover behavior
 function drawImageCover(img) {
-  if (!img || !img.complete || img.naturalWidth === 0) return;
+  if (!img || !img.complete || img.naturalWidth === 0) return false;
 
   const cWidth = canvas.width;
   const cHeight = canvas.height;
   const iWidth = img.naturalWidth;
   const iHeight = img.naturalHeight;
+
+  if (cWidth === 0 || cHeight === 0 || iWidth === 0 || iHeight === 0) return false;
 
   const hRatio = cWidth / iWidth;
   const vRatio = cHeight / iHeight;
@@ -60,6 +66,7 @@ function drawImageCover(img) {
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = 'high';
   ctx.drawImage(img, 0, 0, iWidth, iHeight, drawX, drawY, drawWidth, drawHeight);
+  return true;
 }
 
 // Render the most appropriate frame
@@ -68,6 +75,7 @@ function renderFrame(targetIndex) {
 
   // If the target frame hasn't loaded yet, fallback to the nearest loaded frame
   if (!img || !img.complete || img.naturalWidth === 0) {
+    img = null;
     for (let offset = 1; offset < TOTAL_FRAMES; offset++) {
       const prev = targetIndex - offset;
       if (prev >= 0 && images[prev]?.complete && images[prev]?.naturalWidth > 0) {
@@ -82,9 +90,12 @@ function renderFrame(targetIndex) {
     }
   }
 
-  if (img && (targetIndex !== lastDrawnIndex || lastDrawnIndex === -1)) {
-    drawImageCover(img);
-    lastDrawnIndex = targetIndex;
+  // Draw if we have a valid ready image and it's new or target frame changed
+  if (img && img.complete && img.naturalWidth > 0 && (img !== lastDrawnImg || targetIndex !== lastDrawnIndex)) {
+    if (drawImageCover(img)) {
+      lastDrawnImg = img;
+      lastDrawnIndex = targetIndex;
+    }
   }
 }
 
@@ -138,17 +149,24 @@ function tick() {
 
 // Preload images efficiently with concurrency
 async function preloadImages() {
+  // 1. Immediately load frame 0 and display it
   const firstImg = new Image();
   firstImg.src = getFramePath(0);
   images[0] = firstImg;
 
- const onFirstImgReady = () => {
+  const onFirstImgReady = () => {
     loadedCount = Math.max(loadedCount, 1);
     resizeCanvas();
     lastDrawnImg = null;
     lastDrawnIndex = -1;
     renderFrame(0);
   };
+
+  if (firstImg.complete && firstImg.naturalWidth > 0) {
+    onFirstImgReady();
+  } else {
+    firstImg.onload = onFirstImgReady;
+  }
 
   // 2. Preload remaining frames concurrently in batches of 16
   const BATCH_SIZE = 16;
@@ -226,11 +244,12 @@ window.addEventListener('wheel', (e) => {
 
 window.addEventListener('resize', () => {
   resizeCanvas();
+  lastDrawnIndex = -1; // force re-render
+  lastDrawnImg = null;
   const frameIndex = Math.min(
     TOTAL_FRAMES - 1,
     Math.max(0, Math.round(currentProgress * (TOTAL_FRAMES - 1)))
   );
-  lastDrawnIndex = -1; // force re-render
   renderFrame(frameIndex);
 });
 
