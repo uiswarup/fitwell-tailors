@@ -9,6 +9,7 @@ const hudChapter = document.getElementById('hud-chapter-label');
 const images = new Array(TOTAL_FRAMES);
 let loadedCount = 0;
 let lastDrawnIndex = -1;
+let lastDrawnImg = null;
 let currentProgress = 0;
 let targetProgress = 0;
 
