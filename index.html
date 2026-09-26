@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitwell Tailors (P) Ltd. | Bespoke Handcrafted Tailoring Since 1949 | Ranchi</title>
+  <meta name="description" content="Fitwell Tailors (P) Ltd. - Established 1949 at Capitol Hill Shopping Centre, Main Road, Ranchi. 3rd Generation Master Tailor Rajesh Sharma. Handcrafted bespoke suits, blazers, trousers, dress shirts, and royal prince suits.">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23c5a059'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- Top Frame Preloader Progress -->
+  <div id="loader-bar"></div>
+
+  <!-- Fullscreen Fixed 480-Frame Canvas Scrollytelling Viewport -->
+  <div class="canvas-viewport" aria-hidden="true">
+    <canvas id="scroll-canvas"></canvas>
+    <div class="cinematic-vignette"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <!-- Floating HUD Progress Indicator -->
+  <aside class="scroll-hud" aria-hidden="true">
+    <span class="hud-counter" id="hud-frame-label">FRAME 001</span>
+    <div class="hud-track">
+      <div class="hud-indicator" id="hud-indicator-bar"></div>
+    </div>
+    <span class="hud-chapter" id="hud-chapter-label">01 / DRAFTING</span>
+  </aside>
+
+  <!-- Topmost Contact Bar -->
+  <aside class="top-contact-bar">
+    <div class="contact-info-links">
+      <a href="tel:+916512332678" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        <span>+(91)-651-2332678, +(91)-9835326786, 9708534649</span>
+      </a>
+      <a href="mailto:info@fitwelltailors.com" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        <span>info@fitwelltailors.com</span>
+      </a>
+    </div>
+
+    <div class="social-links">
+      <a href="#facebook" aria-label="Facebook" class="social-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+        </svg>
+      </a>
+      <a href="#youtube" aria-label="YouTube" class="social-btn" id="top-yt-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+          <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#08090b"/>
+        </svg>
+      </a>
+      <a href="#google" aria-label="Website" class="social-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Header & Navigation -->
+  <header class="main-header">
+    <a href="#home" class="brand-wrapper">
+      <div class="brand-icon-box">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <circle cx="6" cy="6" r="3"/>
+          <circle cx="6" cy="18" r="3"/>
+          <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+          <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+          <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">Fitwell</span>
+        <span class="brand-tag">Tailors (P) Ltd.</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Pill -->
+    <nav class="desktop-nav">
+      <a href="#home" class="nav-item-btn active">Home</a>
+      <a href="#about" class="nav-item-btn">About us</a>
+      <a href="#suits" class="nav-item-btn">Suits</a>
+      <a href="#blazer" class="nav-item-btn">Blazer</a>
+      <a href="#trouser" class="nav-item-btn">Trouser</a>
+      <a href="#shirt" class="nav-item-btn">Shirt</a>
+      <a href="#prince-suit" class="nav-item-btn">Prince Suit</a>
+      <a href="#contact" class="nav-item-btn">Contact Us</a>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <button class="btn-login" id="header-login-btn">Login</button>
+      <button class="btn-signup" id="header-signup-btn">Sign up</button>
+      <button class="menu-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation Menu -->
+  <div class="mobile-nav-menu" id="mobile-menu-drawer">
+    <button class="mobile-nav-item active" data-target="#home">Home</button>
+    <button class="mobile-nav-item" data-target="#about">About us</button>
+    <button class="mobile-nav-item" data-target="#suits">Suits Showcase</button>
+    <button class="mobile-nav-item" data-target="#blazer">Blazer</button>
+    <button class="mobile-nav-item" data-target="#trouser">Trouser</button>
+    <button class="mobile-nav-item" data-target="#shirt">Shirt</button>
+    <button class="mobile-nav-item" data-target="#prince-suit">Prince Suit</button>
+    <button class="mobile-nav-item" data-target="#contact">Contact Us</button>
+    <div style="display: flex; gap: 0.6rem; margin-top: 0.5rem; padding-top: 0.8rem; border-top: 1px solid rgba(255,255,255,0.1);">
+      <button class="btn-login" style="flex: 1;" id="mobile-login-btn">Login</button>
+      <button class="btn-signup" style="flex: 1;" id="mobile-signup-btn">Sign up</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- SECTION 1: HERO BANNER -->
+    <section class="hero-section reveal-on-scroll" id="home">
+      <div class="hero-header-box">
+        <h1 class="hero-main-title">
+          CRAFTING WORDS INTO 
+          <span class="hero-badge-tag">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="6" cy="6" r="3"/>
+              <circle cx="6" cy="18" r="3"/>
+              <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+              <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+              <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+            </svg>
+            BESPOKE
+          </span> 
+          SUITS!
+        </h1>
+
+        <p class="hero-desc">
+          DISCOVER THE EXCEPTIONAL CRAFTSMANSHIP THAT GENTLEMEN RAVE ABOUT! OUR COMMITMENT TO QUALITY TAILORING ENSURES YOU'LL BE THRILLINGLY IMPRESSED WITH THE RESULTS.
+        </p>
+
+        <div class="hero-cta-wrapper">
+          <button class="btn-hero-primary" id="hero-book-btn">
+            <span>Book Your Fitting Session!</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </button>
+          <a href="#suits" class="btn-hero-secondary">
+            <span>Explore Curved Slider</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5 Hero Grid Cards -->
+      <div class="hero-cards-grid">
+        <div class="hero-product-card" onclick="document.querySelector('#suits').scrollIntoView({behavior:'smooth'})">
+          <div class="card-top-tag">
+            <span>#01</span>
+            <span class="card-category-label">SUITS</span>
+          </div>
+          <div class="card-img-wrapper">
+            <img src="/images/hero-suit.jpg" alt="Executive Bespoke Suit" loading="lazy" />
+          </div>
+          <div class="card-info-box">
+            <h3 class="card-title">Executive Suit</h3>
+            <p class="card-desc">Bespoke Charcoal Wool</p>
+          </div>
+          <div class="card-bottom-footer">
+            <span>Fitwell Custom</span>
+            <span class="card-arrow">Explore &rarr;</span>
+          </div>
+        </div>
+
+        <div class="hero-product-card" onclick="document.querySelector('#blazer').scrollIntoView({behavior:'smooth'})">
+          <div class="card-top-tag">
+            <span>#02</span>
+            <span class="card-category-label">BLAZER</span>
+          </div>
+          <div class="card-img-wrapper">
+            <img src="/images/hero-blazer.jpg" alt="Velvet Tuxedo Blazer" loading="lazy" />
+          </div>
+          <div class="card-info-box">
+            <h3 class="card-title">Velvet Blazer</h3>
+            <p class="card-desc">Evening Tuxedo Jacket</p>
+          </div>
+          <div class="card-bottom-footer">
+            <span>Fitwell Custom</span>
+            <span class="card-arrow">Explore &rarr;</span>
+          </div>
+        </div>
+
+        <div class="hero-product-card" onclick="document.querySelector('#trouser').scrollIntoView({behavior:'smooth'})">
+          <div class="card-top-tag">
+            <span>#03</span>
+            <span class="card-category-label">TROUSER</span>
+          </div>
+          <div class="card-img-wrapper">
+            <img src="/images/hero-trouser.jpg" alt="Tailored Pleated Trouser" loading="lazy" />
+          </div>
+          <div class="card-info-box">
+            <h3 class="card-title">Tailored Trouser</h3>
+            <p class="card-desc">Crisp Pleated Finish</p>
+          </div>
+          <div class="card-bottom-footer">
+            <span>Fitwell Custom</span>
+            <span class="card-arrow">Explore &rarr;</span>
+          </div>
+        </div>
+
+        <div class="hero-product-card" onclick="document.querySelector('#shirt').scrollIntoView({behavior:'smooth'})">
+          <div class="card-top-tag">
+            <span>#04</span>
+            <span class="card-category-label">SHIRT</span>
+          </div>
+          <div class="card-img-wrapper">
+            <img src="/images/hero-shirt.jpg" alt="Cotton Dress Shirt" loading="lazy" />
+          </div>
+          <div class="card-info-box">
+            <h3 class="card-title">Cotton Dress Shirt</h3>
+            <p class="card-desc">Custom Monogrammed</p>
+          </div>
+          <div class="card-bottom-footer">
+            <span>Fitwell Custom</span>
+            <span class="card-arrow">Explore &rarr;</span>
+          </div>
+        </div>
+
+        <div class="hero-product-card" onclick="document.querySelector('#prince-suit').scrollIntoView({behavior:'smooth'})">
+          <div class="card-top-tag">
+            <span>#05</span>
+            <span class="card-category-label">PRINCE SUIT</span>
+          </div>
+          <div class="card-img-wrapper">
+            <img src="/images/hero-prince.jpg" alt="Royal Prince Suit" loading="lazy" />
+          </div>
+          <div class="card-info-box">
+            <h3 class="card-title">Royal Prince Suit</h3>
+            <p class="card-desc">Ceremonial Masterpiece</p>
+          </div>
+          <div class="card-bottom-footer">
+            <span>Fitwell Custom</span>
+            <span class="card-arrow">Explore &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT US -->
+    <section class="about-section reveal-on-scroll" id="about">
+      <div class="about-container">
+        <div class="about-text-content">
+          <span class="about-eyebrow">
+            I'm Rajesh Sharma — 3rd Generation Master Tailor &amp; Founder of Fitwell Tailors
+          </span>
+          <h2 class="about-heading">
+            Most trusted name in Ranchi for Tailoring Services since 1949
+          </h2>
+          <span class="about-city-tag">Best Tailor in Ranchi</span>
+
+          <div class="about-paragraphs">
+            <p>
+              Found and establish in 1949 in Ranchi, Jharkhand. A third generation Master Tailor, a heritage of artisan ship of custom tailors and made to measure garments, specializing in bespoke custom tailor suit, blazers, pants and shirts.
+            </p>
+            <p>
+              One of the oldest &amp; largest family-led business in the Suite Industry in Ranchi. Fitwell has been in the forefront of suitings and groom wears for more than 60 years. Fitwell Tailor is one of the most trusted Gents Tailoring Shop in Ranchi.
+            </p>
+            <p>
+              We are one of the best Tailor in terms of quality and fittings. We are located at Heart of the city at Capitol Hill Shopping Centre Main Road.
+            </p>
+          </div>
+
+          <div class="about-signature-row">
+            <div>
+              <span class="signature-name">Rajesh Sharma</span>
+              <span class="signature-role">Master Tailor &amp; Proprietor</span>
+            </div>
+
+            <div style="display: flex; gap: 0.8rem; align-items: center;">
+              <button class="btn-signup" id="about-schedule-btn">Schedule Fitting</button>
+              <a href="#suits" class="btn-login" style="text-decoration: none;">View Curved Slider</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="atelier-visual-wrapper">
+          <div class="atelier-glow-back"></div>
+          <div class="atelier-card-inner">
+            <div class="atelier-photo-box">
+              <img src="/images/atelier-craft.jpg" alt="Fitwell Bespoke Atelier Craftsmanship" class="atelier-bg-img" loading="lazy" />
+              <div class="atelier-img-overlay"></div>
+              <div class="atelier-content-layer">
+                <div class="atelier-icon-circ">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+                    <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+                    <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+                    <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+                  </svg>
+                </div>
+                <h4 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: #fff; text-shadow: 0 2px 12px rgba(0,0,0,0.9);">Capitol Hill Atelier</h4>
+                <p style="font-size: 0.78rem; color: rgba(255,255,255,0.85); margin-top: 0.25rem;">Main Road, Ranchi, Jharkhand</p>
+                <div class="atelier-badge-pill">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>Visit Our Atelier</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="atelier-stats-grid">
+              <div class="atelier-stat-box">
+                <span class="stat-number">75+</span>
+                <span class="stat-label">Years Heritage</span>
+              </div>
+              <div class="atelier-stat-box">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Bespoke Fit</span>
+              </div>
+              <div class="atelier-stat-box">
+                <span class="stat-number">3rd</span>
+                <span class="stat-label">Gen Master</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SUITS & INFINITE MARQUEE SLIDER -->
+    <section class="suits-marquee-section reveal-on-scroll" id="suits">
+      <div class="marquee-header">
+        <h2 class="marquee-title">
+          A Suit Says a Lot About Status, <br>
+          <span>Supercharge Your Presence</span>
+        </h2>
+        <p class="marquee-sub">
+          All-in-one platform to tailor, fit, and deliver — faster and smarter.
+        </p>
+        <button class="btn-gold-pill" id="suits-get-started-btn">
+          <span>Get started for Free</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Infinite Marquee Slider -->
+      <div class="marquee-wrapper">
+        <div class="marquee-edge-gradient-left"></div>
+        <div class="marquee-edge-gradient-right"></div>
+
+        <div class="animate-marquee-track">
+          <!-- Model 01 -->
+          <div class="suit-model-box" onclick="openConsultationModal('Executive Bespoke Suit')">
+            <div class="model-header-tag">
+              <span>MODEL #01</span>
+              <span class="model-pill-badge">BESPOKE</span>
+            </div>
+            <div class="model-image-preview">
+              <img src="/images/model-01.jpg" alt="Aarav Sharma" class="model-portrait-img" loading="lazy" />
+              <div class="model-overlay-tag">
+                <span>Aarav Sharma</span>
+                <span style="color: var(--accent-gold); font-size: 0.65rem;">★ 4.9</span>
+              </div>
+            </div>
+            <div class="model-footer-info">
+              <span class="model-role">Executive Bespoke</span>
+              <span class="model-brand-sub">Charcoal Italian Wool</span>
+            </div>
+          </div>
+
+          <!-- Model 02 -->
+          <div class="suit-model-box" onclick="openConsultationModal('Wedding Tuxedo')">
+            <div class="model-header-tag">
+              <span>MODEL #02</span>
+              <span class="model-pill-badge">TUXEDO</span>
+            </div>
+            <div class="model-image-preview">
+              <img src="/images/model-02.jpg" alt="Vikram Mehta" class="model-portrait-img" loading="lazy" />
+              <div class="model-overlay-tag">
+                <span>Vikram Mehta</span>
+                <span style="color: var(--accent-gold); font-size: 0.65rem;">★ 5.0</span>
+              </div>
+            </div>
+            <div class="model-footer-info">
+              <span class="model-role">Wedding Tuxedo</span>
+              <span class="model-brand-sub">Midnight Velvet Peak</span>
+            </div>
+          </div>
+
+          <!-- Model 03 -->
+          <div class="suit-model-box" onclick="openConsultationModal('Royal Prince Suit')">
+            <div class="model-header-tag">
+              <span>MODEL #03</span>
+              <span class="model-pill-badge">ROYAL</span>
+            </div>
+            <div class="model-image-preview">
+              <img src="/images/model-03.jpg" alt="Rohan Verma" class="model-portrait-img" loading="lazy" />
+              <div class="model-overlay-tag">
+                <span>Rohan Verma</span>
+                <span style="color: var(--accent-gold); font-size: 0.65rem;">★ 4.9</span>
+              </div>
+            </div>
+            <div class="model-footer-info">
+              <span class="model-role">Royal Prince Suit</span>
+              <span class="model-brand-sub">Embroidered Ceremonial</span>
+            </div>
+          </div>
+
+          <!-- Model 04 -->
+          <div class="suit-model-box" onclick="openConsultationModal('Business Three-Piece')">
+            <div class="model-header-tag">
+              <span>MODEL #04</span>
+              <span class="model-pill-badge">3-PIECE</span>
+            </div>
+            <div class="model-image-preview">
+              <img src="/images/model-04.jpg" alt="Kabir Kapoor" class="model-portrait-img" loading="lazy" />
+              <div class="model-overlay-tag">
+                <span>Kabir Kapoor</span>
+                <span style="color: var(--accent-gold); font-size: 0.65rem;">★ 4.8</span>
+              </div>
+            </div>
+            <div class="model-footer-info">
+              <span class="model-role">Business Three-Piece</span>
+              <span class="model-brand-sub">Navy Pinstripe Finish</span>
+            </div>
+          </div>
+
+          <!-- Model 05 -->
+          <div class="suit-model-box" onclick="openConsultationModal('Casual Blazer')">
+            <div class="model-header-tag">
+              <span>MODEL #05</span>
+              <span class="model-pill-badge">BLAZER</span>
+            </div>
+            <div class="model-image-preview">
+              <img src="/images/model-05.jpg" alt="Aditya Sen" class="model-portrait-img" loading="lazy" />
+              <div class="model-overlay-tag">
+                <span>Aditya Sen</span>
+                <span style="color: var(--accent-gold); font-size: 0.65rem;">★ 4.9</span>
+              </div>
+            </div>
+            <div class="model-footer-info">
+              <span class="model-role">Casual Blazer</span>
+              <span class="model-brand-sub">Cashmere Blend</span>
+            </div>
+          </div>
+
+          <!-- Model 06 -->
+          <div class="suit-model-box" onclick="openConsultationModal('Groom Sherwani')">
+            <div class="model-header-tag">
+              <span>MODEL #06</span>
+              <span class="model-pill-badge">CEREMONIAL</span>
+            </div>
+            <div class="model-image-preview">
+              <img src="/images/model-06.jpg" alt="Manish Roy" class="model-portrait-img" loading="lazy" />
+              <div class="model-overlay-tag">
+                <span>Manish Roy</span>
+                <span style="color: var(--accent-gold); font-size: 0.65rem;">★ 5.0</span>
+              </div>
+            </div>
+            <div class="model-footer-info">
+              <span class="model-role">Groom Sherwani</span>
+              <span class="model-brand-sub">Royal Ivory Brocade</span>
+            </div>
+          </div>
+
+          <!-- Repeat for Seamless Infinite Loop -->
+          <div class="suit-model-box" onclick="openConsultationModal('Executive Bespoke Suit')">
+            <div class="model-header-tag">
+              <span>MODEL #01</span>
+              <span class="model-pill-badge">BESPOKE</span>
+            </div>
+            <div class="model-image-preview">
+              <img src="/images/model-01.jpg" alt="Aarav Sharma" class="model-portrait-img" loading="lazy" />
+              <div class="model-overlay-tag">
+                <span>Aarav Sharma</span>
+                <span style="color: var(--accent-gold); font-size: 0.65rem;">★ 4.9</span>
+              </div>
+            </div>
+            <div class="model-footer-info">
+              <span class="model-role">Executive Bespoke</span>
+              <span class="model-brand-sub">Charcoal Italian Wool</span>
+            </div>
+          </div>
+
+          <div class="suit-model-box" onclick="openConsultationModal('Wedding Tuxedo')">
+            <div class="model-header-tag">
+              <span>MODEL #02</span>
+              <span class="model-pill-badge">TUXEDO</span>
+            </div>
+            <div class="model-image-preview">
+              <img src="/images/model-02.jpg" alt="Vikram Mehta" class="model-portrait-img" loading="lazy" />
+              <div class="model-overlay-tag">
+                <span>Vikram Mehta</span>
+                <span style="color: var(--accent-gold); font-size: 0.65rem;">★ 5.0</span>
+              </div>
+            </div>
+            <div class="model-footer-info">
+              <span class="model-role">Wedding Tuxedo</span>
+              <span class="model-brand-sub">Midnight Velvet Peak</span>
+            </div>
+          </div>
+
+          <div class="suit-model-box" onclick="openConsultationModal('Royal Prince Suit')">
+            <div class="model-header-tag">
+              <span>MODEL #03</span>
+              <span class="model-pill-badge">ROYAL</span>
+            </div>
+            <div class="model-image-preview">
+              <img src="/images/model-03.jpg" alt="Rohan Verma" class="model-portrait-img" loading="lazy" />
+              <div class="model-overlay-tag">
+                <span>Rohan Verma</span>
+                <span style="color: var(--accent-gold); font-size: 0.65rem;">★ 4.9</span>
+              </div>
+            </div>
+            <div class="model-footer-info">
+              <span class="model-role">Royal Prince Suit</span>
+              <span class="model-brand-sub">Embroidered Ceremonial</span>
+            </div>
+          </div>
+
+          <div class="suit-model-box" onclick="openConsultationModal('Business Three-Piece')">
+            <div class="model-header-tag">
+              <span>MODEL #04</span>
+              <span class="model-pill-badge">3-PIECE</span>
+            </div>
+            <div class="model-image-preview">
+              <img src="/images/model-04.jpg" alt="Kabir Kapoor" class="model-portrait-img" loading="lazy" />
+              <div class="model-overlay-tag">
+                <span>Kabir Kapoor</span>
+                <span style="color: var(--accent-gold); font-size: 0.65rem;">★ 4.8</span>
+              </div>
+            </div>
+            <div class="model-footer-info">
+              <span class="model-role">Business Three-Piece</span>
+              <span class="model-brand-sub">Navy Pinstripe Finish</span>
+            </div>
+          </div>
+
+          <div class="suit-model-box" onclick="openConsultationModal('Casual Blazer')">
+            <div class="model-header-tag">
+              <span>MODEL #05</span>
+              <span class="model-pill-badge">BLAZER</span>
+            </div>
+            <div class="model-image-preview">
+              <img src="/images/model-05.jpg" alt="Aditya Sen" class="model-portrait-img" loading="lazy" />
+              <div class="model-overlay-tag">
+                <span>Aditya Sen</span>
+                <span style="color: var(--accent-gold); font-size: 0.65rem;">★ 4.9</span>
+              </div>
+            </div>
+            <div class="model-footer-info">
+              <span class="model-role">Casual Blazer</span>
+              <span class="model-brand-sub">Cashmere Blend</span>
+            </div>
+          </div>
+
+          <div class="suit-model-box" onclick="openConsultationModal('Groom Sherwani')">
+            <div class="model-header-tag">
+              <span>MODEL #06</span>
+              <span class="model-pill-badge">CEREMONIAL</span>
+            </div>
+            <div class="model-image-preview">
+              <img src="/images/model-06.jpg" alt="Manish Roy" class="model-portrait-img" loading="lazy" />
+              <div class="model-overlay-tag">
+                <span>Manish Roy</span>
+                <span style="color: var(--accent-gold); font-size: 0.65rem;">★ 5.0</span>
+              </div>
+            </div>
+            <div class="model-footer-info">
+              <span class="model-role">Groom Sherwani</span>
+              <span class="model-brand-sub">Royal Ivory Brocade</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Pillars of Precision -->
+      <div class="marquee-pillars-grid">
+        <div class="pillar-item">
+          <h3>Bespoke Customization</h3>
+          <p>Communicate seamlessly and keep everyone in sync with built-in styling, fabric sharing, and live updates directly with master tailors.</p>
+        </div>
+        <div class="pillar-item">
+          <h3>Precision &amp; Measurement Tracking</h3>
+          <p>Assign tailoring tasks, set deadlines, and visualize progress with bespoke suits tailored to your exact 36 anatomical measurements.</p>
+        </div>
+        <div class="pillar-item">
+          <h3>Impeccable Performance Insights</h3>
+          <p>Make smarter style decisions with expert guidance on fabric weights, seasonal drape, and timeless sartorial balance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT CATEGORY SHOWCASE SECTIONS -->
+    <section class="categories-container">
+      <!-- BLAZER -->
+      <article class="category-block reveal-on-scroll" id="blazer">
+        <div class="category-info-box">
+          <span class="category-pill">Category 01</span>
+          <h2 class="category-title">Bespoke Blazers &amp; Dinner Jackets</h2>
+          <p class="category-desc">
+            Engineered for effortless distinction. Whether in lush velvet for black-tie galas or unstructured hopsack wool for smart-casual wear, each jacket features hand-rolled lapels, roped shoulders, and cupro silk inner lining.
+          </p>
+          <ul class="category-feature-list">
+            <li class="category-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Classic Peak, Notch, and Shawl Satin Lapels</span>
+            </li>
+            <li class="category-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Hand-stitched Pick-Stitching along edges</span>
+            </li>
+            <li class="category-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Genuine Mother-of-Pearl &amp; Horn Buttons</span>
+            </li>
+          </ul>
+          <button class="btn-hero-primary" onclick="openConsultationModal('Custom Blazer Fitting')">Inquire Custom Blazer</button>
+        </div>
+        <div class="category-visual-card">
+          <img src="/images/cat-blazer.jpg" alt="The Evening Dinner Jacket" class="category-bg-img" loading="lazy" />
+          <div class="category-img-overlay"></div>
+          <div class="category-content-layer">
+            <span class="category-card-badge">Black Tie Luxury</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; font-weight: 700; color: #fff;">The Evening Dinner Jacket</h3>
+            <p style="font-size: 0.82rem; color: rgba(255,255,255,0.78); margin-top: 0.35rem; max-width: 320px;">
+              Black velvet with grosgrain silk peak lapel and dual back vents.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- TROUSER -->
+      <article class="category-block reverse reveal-on-scroll" id="trouser">
+        <div class="category-info-box">
+          <span class="category-pill">Category 02</span>
+          <h2 class="category-title">Hand-Tailored Bespoke Trousers</h2>
+          <p class="category-desc">
+            A jacket is only as commanding as the trousers anchoring it. Cut with high-rise Hollywood waistbands, deep forward pleats, and extended waistband closures with brass side adjusters for a belt-free silhouette.
+          </p>
+          <ul class="category-feature-list">
+            <li class="category-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Single or Double Forward Pleats with sharp crease</span>
+            </li>
+            <li class="category-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Gurkha Side Buckles &amp; Suspender Buttons</span>
+            </li>
+            <li class="category-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Turn-up Cuffs (1.75" / 2") or Clean Minimal Break</span>
+            </li>
+          </ul>
+          <button class="btn-hero-primary" onclick="openConsultationModal('Bespoke Trouser Order')">Order Custom Trouser</button>
+        </div>
+        <div class="category-visual-card">
+          <img src="/images/cat-trouser.jpg" alt="The High-Rise Flannel Trouser" class="category-bg-img" loading="lazy" />
+          <div class="category-img-overlay"></div>
+          <div class="category-content-layer">
+            <span class="category-card-badge">Sartorial Cut</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; font-weight: 700; color: #fff;">The High-Rise Flannel Trouser</h3>
+            <p style="font-size: 0.82rem; color: rgba(255,255,255,0.78); margin-top: 0.35rem; max-width: 320px;">
+              Dual forward pleats, coin pocket, and 2-inch cuffs crafted in English flannel.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- SHIRT -->
+      <article class="category-block reveal-on-scroll" id="shirt">
+        <div class="category-info-box">
+          <span class="category-pill">Category 03</span>
+          <h2 class="category-title">Custom Monogrammed Dress Shirts</h2>
+          <p class="category-desc">
+            Constructed with 22 stitches per inch using two-ply 100% Egyptian Giza Cotton. Hand-turned collars with removable brass stays and custom embroidered monograms on the left cuff or chest.
+          </p>
+          <ul class="category-feature-list">
+            <li class="category-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Cutaway, Semi-Spread, and Tuxedo Wingtips</span>
+            </li>
+            <li class="category-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>French Double Cuffs or Curved Barrel Cuffs</span>
+            </li>
+            <li class="category-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Custom Hand-Stitched Monogram Included</span>
+            </li>
+          </ul>
+          <button class="btn-hero-primary" onclick="openConsultationModal('Custom Dress Shirt Fitting')">Design Your Shirt</button>
+        </div>
+        <div class="category-visual-card">
+          <img src="/images/cat-shirt.jpg" alt="Egyptian Giza Twill" class="category-bg-img" loading="lazy" />
+          <div class="category-img-overlay"></div>
+          <div class="category-content-layer">
+            <span class="category-card-badge">100% Giza Cotton</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; font-weight: 700; color: #fff;">Egyptian Giza Twill</h3>
+            <p style="font-size: 0.82rem; color: rgba(255,255,255,0.78); margin-top: 0.35rem; max-width: 320px;">
+              Mother-of-pearl buttons with hand-sewn crow's foot stitching.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRINCE SUIT -->
+      <article class="category-block reverse reveal-on-scroll" id="prince-suit">
+        <div class="category-info-box">
+          <span class="category-pill">Category 04</span>
+          <h2 class="category-title">Royal Prince Suit &amp; Ceremonial Attire</h2>
+          <p class="category-desc">
+            The pinnacle of Indian royal tailoring. Featuring aristocratic Bandhgala collars, structured high-standing lapels, antique metallic buttons, and intricate tone-on-tone embroidery designed for royal groom celebrations.
+          </p>
+          <ul class="category-feature-list">
+            <li class="category-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>High-neck Bandhgala Prince Silhouette</span>
+            </li>
+            <li class="category-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Zardozi &amp; Resham Hand-Embroidered Accents</span>
+            </li>
+            <li class="category-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Pure Raw Silk, Velvet &amp; Brocade Selections</span>
+            </li>
+          </ul>
+          <button class="btn-hero-primary" onclick="openConsultationModal('Royal Prince Suit Consultation')">Schedule Royal Fitting</button>
+        </div>
+        <div class="category-visual-card">
+          <img src="/images/cat-prince.jpg" alt="The Ceremonial Prince Suit" class="category-bg-img" loading="lazy" />
+          <div class="category-img-overlay"></div>
+          <div class="category-content-layer">
+            <span class="category-card-badge">Royal Heritage</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; font-weight: 700; color: #fff;">The Ceremonial Prince Suit</h3>
+            <p style="font-size: 0.82rem; color: rgba(255,255,255,0.78); margin-top: 0.35rem; max-width: 320px;">
+              Ivory brocade with engraved antique gold crest buttons and breeches.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- SECTION 4: CONTACT US FORM -->
+    <section class="contact-section reveal-on-scroll" id="contact">
+      <div class="contact-header">
+        <h2 class="contact-serif-title">Contact Us</h2>
+      </div>
+
+      <div class="form-success-alert" id="contact-success-box">
+        <div style="width: 56px; height: 56px; border-radius: 999px; background: rgba(197, 160, 89, 0.2); border: 1px solid var(--accent-gold); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem auto; color: var(--accent-gold-light);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: 0.4rem;">Message Sent Successfully!</h3>
+        <p style="font-size: 0.82rem; color: rgba(255,255,255,0.7);">Thank you for reaching out to Fitwell Tailors. Our master tailor will contact you promptly.</p>
+      </div>
+
+      <form class="contact-form-card" id="contact-form-element">
+        <div class="form-grid-two">
+          <div class="field-group">
+            <label class="field-label" for="inp-firstname">Firstname *</label>
+            <input type="text" id="inp-firstname" class="field-input" placeholder="Please enter your firstname *" required>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="inp-lastname">Lastname *</label>
+            <input type="text" id="inp-lastname" class="field-input" placeholder="Please enter your lastname *" required>
+          </div>
+        </div>
+
+        <div class="form-grid-two">
+          <div class="field-group">
+            <label class="field-label" for="inp-email">Email *</label>
+            <input type="email" id="inp-email" class="field-input" placeholder="Please enter your email *" required>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="inp-phone">Phone</label>
+            <input type="tel" id="inp-phone" class="field-input" placeholder="Please enter your phone">
+          </div>
+        </div>
+
+        <div class="field-group" style="margin-bottom: 1.2rem;">
+          <label class="field-label" for="inp-message">Message *</label>
+          <textarea id="inp-message" rows="4" class="field-textarea" placeholder="Message for us *" required></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="btn-send-message">SEND MESSAGE</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- SECTION: DIRECT EMBEDDED MAP -->
+    <section class="map-location-section reveal-on-scroll">
+      <div class="map-card-outer">
+        <div class="map-header-row">
+          <div class="map-address-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Capitol Hill Shopping Centre, Main Road, Ranchi, Jharkhand</span>
+          </div>
+          <a href="https://maps.google.com/?q=Capitol+Hill+Shopping+Centre+Main+Road+Ranchi" target="_blank" rel="noreferrer" class="google-maps-link">
+            <span>Google Maps</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="map-visual-frame">
+          <div class="map-pin-pulse">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h4 class="map-location-name">Fitwell Tailors (P) Ltd.</h4>
+          <p class="map-location-sub">G 8, Capitol Hill Shopping Centre, Main Road, Ranchi - 834001</p>
+          <div class="map-status-pill">
+            <span style="width: 7px; height: 7px; border-radius: 999px; background: var(--accent-gold-light); display: inline-block;"></span>
+            <span>Active Location &bull; Open Now</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4-COLUMN RICH FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-four-cols">
+      <!-- Col 1: Categories -->
+      <div>
+        <h4 class="footer-col-title">CATEGORIES</h4>
+        <ul class="footer-nav-list">
+          <li><a href="#suits" class="footer-nav-link">Suit</a></li>
+          <li><a href="#blazer" class="footer-nav-link">Blazer</a></li>
+          <li><a href="#trouser" class="footer-nav-link">Trouser</a></li>
+          <li><a href="#shirt" class="footer-nav-link">Shirt</a></li>
+          <li><a href="#prince-suit" class="footer-nav-link">Prince Suit</a></li>
+          <li><a href="#home" class="footer-nav-link">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 2: Address & Phones -->
+      <div>
+        <h4 class="footer-col-title">ADDRESS</h4>
+        <div class="footer-address-items">
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>G 8, Capitol Hill Shopping Centre, Main Road, Ranchi - 834001</span>
+          </div>
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>+(91)-651-2332678</span>
+          </div>
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>+(91)-9835326786, 9708534649</span>
+          </div>
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>info@fitwelltailors.com</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Col 3: Hours of Operation -->
+      <div>
+        <h4 class="footer-col-title">HOURS OF OPERATION</h4>
+        <div class="hours-card">
+          <span class="hours-day">Monday - Saturday</span>
+          <span class="hours-time">10:30AM &ndash; 9:00PM</span>
+        </div>
+        <div class="hours-card">
+          <span class="hours-day">Sunday</span>
+          <span class="hours-time">11:30 PM &ndash; 03:00 PM</span>
+        </div>
+      </div>
+
+      <!-- Col 4: Video Card -->
+      <div>
+        <h4 class="footer-col-title">VIDEO</h4>
+        <div class="footer-video-thumb" id="footer-video-trigger">
+          <img src="/images/video-thumb.jpg" alt="Fitwell tailor atelier documentary" class="video-thumb-bg" loading="lazy" />
+          <span class="video-thumb-title">Fitwell tailor Ranchi Best Men's suit</span>
+          <div class="video-play-circ">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+          </div>
+          <div class="video-yt-badge">
+            <span>Watch on YouTube</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <p>&copy; 1949&ndash;2026 Fitwell Tailors (P) Ltd. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#home">Privacy Policy</a>
+        <a href="#home">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONSULTATION & AUTH MODAL -->
+  <div class="modal-overlay" id="consultation-modal">
+    <div class="modal-card">
+      <button class="modal-close-icon" id="close-consultation-btn">&times;</button>
+      
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tab-consult">Consultation</button>
+        <button class="modal-tab-btn" id="tab-login">Login</button>
+        <button class="modal-tab-btn" id="tab-signup">Sign up</button>
+      </div>
+
+      <div id="modal-success-state" style="display: none; text-align: center; padding: 2rem 0;">
+        <div style="width: 52px; height: 52px; border-radius: 999px; background: rgba(197, 160, 89, 0.2); border: 1px solid var(--accent-gold); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; color: var(--accent-gold-light);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: 0.35rem;">Request Confirmed!</h3>
+        <p style="font-size: 0.8rem; color: rgba(255,255,255,0.7);">Our master tailor at Capitol Hill Shopping Centre will connect with you shortly.</p>
+      </div>
+
+      <form id="modal-form-body">
+        <h3 class="modal-title" id="modal-heading-text">Book Bespoke Consultation</h3>
+        <p class="modal-subtitle" id="modal-subtitle-text">Experience world-class tailoring with Fitwell Tailors (P) Ltd.</p>
+
+        <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+          <div class="field-group">
+            <label class="field-label" for="modal-name">Full Name</label>
+            <input type="text" id="modal-name" class="field-input" placeholder="Enter your full name" required>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="modal-email">Email Address</label>
+            <input type="email" id="modal-email" class="field-input" placeholder="name@example.com" required>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="modal-phone">Phone Number</label>
+            <input type="tel" id="modal-phone" class="field-input" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="field-group" id="modal-preference-group">
+            <label class="field-label" for="modal-notes">Style Preference / Notes</label>
+            <textarea id="modal-notes" rows="3" class="field-textarea" placeholder="Suit, blazer, prince suit, or specific fitting requirements..."></textarea>
+          </div>
+          <button type="submit" class="btn-signup" style="width: 100%; padding: 0.85rem; margin-top: 0.5rem; justify-content: center;" id="modal-submit-btn">
+            Confirm Booking
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- VIDEO SHOWCASE MODAL -->
+  <div class="modal-overlay" id="video-modal">
+    <div class="modal-card video-modal-card">
+      <button class="modal-close-icon" id="close-video-btn">&times;</button>
+      <h3 style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 1rem;">
+        Fitwell Tailor Ranchi Best Men's Suit Showcase
+      </h3>
+      <div class="video-player-simulation">
+        <div style="width: 60px; height: 60px; border-radius: 999px; background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark)); display: flex; align-items: center; justify-content: center; color: #08090b; margin-bottom: 1rem; box-shadow: 0 0 28px var(--accent-gold-glow);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+        </div>
+        <h4 style="font-family: var(--font-serif); font-size: 1.1rem; font-weight: 700; color: #fff;">Fitwell Tailors Atelier Showcase</h4>
+        <p style="font-size: 0.8rem; color: rgba(255,255,255,0.65); max-width: 440px; margin-top: 0.4rem;">
+          Established in 1949 at Capitol Hill Shopping Centre, Main Road, Ranchi. 3rd Generation Master Tailor Rajesh Sharma.
+        </p>
+        <a href="https://www.youtube.com" target="_blank" rel="noreferrer" class="btn-gold-pill" style="margin-top: 1.5rem; text-decoration: none;">
+          <span>Watch on Official YouTube</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive UI Controller & Scroll Observer Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Mobile Menu Drawer
+      const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
+      const mobileMenu = document.getElementById('mobile-menu-drawer');
+      if (mobileToggleBtn && mobileMenu) {
+        mobileToggleBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('open');
+        });
+      }
+
+      document.querySelectorAll('.mobile-nav-item').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const target = btn.dataset.target;
+          if (target) {
+            document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
+          }
+          mobileMenu.classList.remove('open');
+        });
+      });
+
+      // 2. Navigation Link Active State
+      const sections = document.querySelectorAll('section[id], footer[id]');
+      const navButtons = document.querySelectorAll('.desktop-nav .nav-item-btn');
+      window.addEventListener('scroll', () => {
+        let currentId = '';
+        sections.forEach(sec => {
+          const top = sec.offsetTop - 140;
+          if (window.scrollY >= top) {
+            currentId = sec.getAttribute('id');
+          }
+        });
+        navButtons.forEach(link => {
+          const href = link.getAttribute('href')?.replace('#', '');
+          if (href === currentId) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }, { passive: true });
+
+      // 3. Smooth Reveal on Scroll (Intersection Observer)
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+        revealObserver.observe(el);
+      });
+
+      // 4. Contact Form Submission
+      const contactForm = document.getElementById('contact-form-element');
+      const contactSuccess = document.getElementById('contact-success-box');
+      if (contactForm && contactSuccess) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          contactForm.style.display = 'none';
+          contactSuccess.classList.add('show');
+          setTimeout(() => {
+            contactSuccess.classList.remove('show');
+            contactForm.reset();
+            contactForm.style.display = 'block';
+          }, 4500);
+        });
+      }
+
+      // 5. Consultation & Auth Modal
+      const modal = document.getElementById('consultation-modal');
+      const modalForm = document.getElementById('modal-form-body');
+      const modalSuccess = document.getElementById('modal-success-state');
+      const closeConsultBtn = document.getElementById('close-consultation-btn');
+      const tabConsult = document.getElementById('tab-consult');
+      const tabLogin = document.getElementById('tab-login');
+      const tabSignup = document.getElementById('tab-signup');
+      const modalHeading = document.getElementById('modal-heading-text');
+      const modalSubtitle = document.getElementById('modal-subtitle-text');
+      const modalSubmitBtn = document.getElementById('modal-submit-btn');
+      const prefGroup = document.getElementById('modal-preference-group');
+
+      window.openConsultationModal = (serviceTitle = '') => {
+        modal.classList.add('open');
+        modalSuccess.style.display = 'none';
+        modalForm.style.display = 'block';
+        setModalMode('consultation');
+        if (serviceTitle && document.getElementById('modal-notes')) {
+          document.getElementById('modal-notes').value = `Interested in: ${serviceTitle}`;
+        }
+      };
+
+      const setModalMode = (mode) => {
+        [tabConsult, tabLogin, tabSignup].forEach(t => t.classList.remove('active'));
+        if (mode === 'consultation') {
+          tabConsult.classList.add('active');
+          modalHeading.textContent = 'Book Bespoke Consultation';
+          modalSubtitle.textContent = 'Experience world-class tailoring with Fitwell Tailors (P) Ltd.';
+          modalSubmitBtn.textContent = 'Confirm Booking';
+          if (prefGroup) prefGroup.style.display = 'flex';
+        } else if (mode === 'login') {
+          tabLogin.classList.add('active');
+          modalHeading.textContent = 'Welcome Back';
+          modalSubtitle.textContent = 'Access your Fitwell bespoke measurement profile.';
+          modalSubmitBtn.textContent = 'Sign In';
+          if (prefGroup) prefGroup.style.display = 'none';
+        } else if (mode === 'signup') {
+          tabSignup.classList.add('active');
+          modalHeading.textContent = 'Create Fitwell Account';
+          modalSubtitle.textContent = 'Join our distinguished sartorial club in Ranchi.';
+          modalSubmitBtn.textContent = 'Register Account';
+          if (prefGroup) prefGroup.style.display = 'none';
+        }
+      };
+
+      tabConsult?.addEventListener('click', () => setModalMode('consultation'));
+      tabLogin?.addEventListener('click', () => setModalMode('login'));
+      tabSignup?.addEventListener('click', () => setModalMode('signup'));
+
+      document.getElementById('hero-book-btn')?.addEventListener('click', () => openConsultationModal());
+      document.getElementById('about-schedule-btn')?.addEventListener('click', () => openConsultationModal());
+      document.getElementById('suits-get-started-btn')?.addEventListener('click', () => openConsultationModal('Custom Suit Consultation'));
+      document.getElementById('header-login-btn')?.addEventListener('click', () => { modal.classList.add('open'); setModalMode('login'); });
+      document.getElementById('header-signup-btn')?.addEventListener('click', () => { modal.classList.add('open'); setModalMode('signup'); });
+      document.getElementById('mobile-login-btn')?.addEventListener('click', () => { modal.classList.add('open'); setModalMode('login'); mobileMenu.classList.remove('open'); });
+      document.getElementById('mobile-signup-btn')?.addEventListener('click', () => { modal.classList.add('open'); setModalMode('signup'); mobileMenu.classList.remove('open'); });
+
+      closeConsultBtn?.addEventListener('click', () => modal.classList.remove('open'));
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('open');
+      });
+
+      modalForm?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        modalForm.style.display = 'none';
+        modalSuccess.style.display = 'block';
+        setTimeout(() => {
+          modal.classList.remove('open');
+          modalForm.reset();
+        }, 2200);
+      });
+
+      // 6. Video Showcase Modal
+      const videoModal = document.getElementById('video-modal');
+      const closeVideoBtn = document.getElementById('close-video-btn');
+      const openVideo = () => videoModal.classList.add('open');
+      document.getElementById('footer-video-trigger')?.addEventListener('click', openVideo);
+      document.getElementById('top-yt-btn')?.addEventListener('click', (e) => { e.preventDefault(); openVideo(); });
+      closeVideoBtn?.addEventListener('click', () => videoModal.classList.remove('open'));
+      videoModal.addEventListener('click', (e) => {
+        if (e.target === videoModal) videoModal.classList.remove('open');
+      });
+    });
+  </script>
+
+  <!-- 480-Frame Canvas Preloader & Interpolation Engine -->
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
