@@ -138,14 +138,15 @@ function tick() {
 
 // Preload images efficiently with concurrency
 async function preloadImages() {
-  // 1. Immediately load frame 0 and display it
   const firstImg = new Image();
   firstImg.src = getFramePath(0);
   images[0] = firstImg;
 
-  firstImg.onload = () => {
-    loadedCount++;
+ const onFirstImgReady = () => {
+    loadedCount = Math.max(loadedCount, 1);
     resizeCanvas();
+    lastDrawnImg = null;
+    lastDrawnIndex = -1;
     renderFrame(0);
   };
 
