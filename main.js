@@ -22,7 +22,7 @@ const chapters = [
 // Build frame path
 function getFramePath(index) {
   const frameNum = String(index + 1).padStart(4, '0');
-  return `frames/frame_${frameNum}.jpg`;
+  return `./frames/frame_${frameNum}.jpg`;
 }
 
 // Adjust canvas resolution for Retina / High DPI displays
